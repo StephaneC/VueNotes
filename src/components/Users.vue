@@ -15,6 +15,9 @@ export default {
     }
   },
   methods: {
+    created() {
+      this.getUsers()
+    },
     getUsers: function(){
       fetch('https://cesi.cleverapps.io/users',
       {
